@@ -1,0 +1,11 @@
+2) CANVAS:
+    METHODS:
+        game.fillRect(0,0,100,100); // crea un rectángulo
+        game.clearRect(50,50,50,50); // borra en forma rectangular
+
+        game.font = '25px Helvetica' // Familia y tamaño de las fuentes
+        game.fillStyle = 'White' // Agrega color a las fuentes
+        game.textAlign = 'left' // Alinia el texto desde donde comienza la ubicación inicial del texto
+        game.fillText('Luis', 5, 25) // Añade un texto y lo ubica en coordenadas
+                                        (la coordenada Y: lo ubica desde el bottom del texto).
+        

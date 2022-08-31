@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-section">
+            <h1 id="main_title">Retro 90's Games</h1>
+            <canvas id="game" width="800" height="400"></canvas>
+        </div>
+
+        <div class="game-extras">
+            <div class="btns">
+                <div class="btns-cont">
+                    <button id="up"><i class="material-icons">arrow_drop_up</i></button>
+                    <button id="left"><i class="material-icons">arrow_left</i></button>
+                    <button id="right"><i class="material-icons">arrow_right</i></button>
+                    <button id="down"><i class="material-icons">arrow_drop_down</i></button>
+                </div>
+            </div>
+    
+            <div class="info">
+                <!-- TODO extra info -->
+                <p>Vidas: <span id="lives"></span></p>
+                <p>Tiempo: <span id="time"></span></p>
+                <p>Record: <span id="record"></span></p>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/js/deco.js"></script>
+    <script src="./src/js/maps.js"></script>
+    <script src="./src/js/game.js"></script>
+</body>
+</html>

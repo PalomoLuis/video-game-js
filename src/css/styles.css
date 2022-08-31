@@ -1,0 +1,103 @@
+:root {
+    --dark: #404040;
+    --gray-dark: #606060;
+    --gray: #a0a0a0;
+    --white: #ffffff;
+    --red: #ee0033;
+    --title:  'Bowlby One SC', sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--white);
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+}
+h1 {
+    font-family: var(--title);
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0 0 10px;
+    text-align: center;
+}
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end   ;
+}
+.game-container > div, .game-container > canvas{
+    margin-bottom: 10px;
+}
+.game-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.game-container #game {
+    border: 1px var(--gray-dark) solid;
+}
+.game-extras {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between; 
+    height: 90%;
+}
+@media screen and (max-width: 607px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .game-container {
+        align-items: flex-start;
+    }
+    .game-extras {
+        flex-direction: row;
+        height: auto;
+        width: 80%;
+    }
+}
+.btns {
+    display: flex;
+    justify-content: end;
+}
+.btns .btns-cont{
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-template-rows: 30px 30px 30px;
+    grid-template-areas: "upx upx"
+                         "leftx rightx"
+                         "downx downx";
+    gap: 4px;
+}
+.btns-cont button {
+    cursor: pointer;
+}
+.btns-cont button i {
+    font-size: 2.5rem;
+    line-height: 1.4rem;
+}
+#up {
+    grid-area: upx;
+    width: 60px;
+    margin: 0 auto;
+}
+#left {
+    grid-area: leftx;
+}
+#right {
+    grid-area: rightx;
+}
+#down {
+    grid-area: downx;
+    width: 60px;
+    margin: 0 auto;
+}
